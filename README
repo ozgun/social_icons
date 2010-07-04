@@ -18,7 +18,7 @@ Installation
 
 Install plugin from github:
 
-$ .script/plugin install git://github.com/ozgun/social_icons.git
+$ ./script/plugin install git://github.com/ozgun/social_icons.git
 
 Installation hooks will copy some files to application's "public" folder.
 
