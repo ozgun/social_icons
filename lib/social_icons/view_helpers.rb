@@ -14,10 +14,9 @@ module SocialIcons
       link = "http://" + request.env["HTTP_HOST"] + request.request_uri
       default_opts = {:size => 48, :link => link, :title => "", :icon_set => "default"}
       opts = default_opts.merge(opts)
-      #icon_css = "float: left; margin-right: 5px"
       opts[:icon_path] = "social_icons/#{opts[:icon_set]}/#{opts[:size]}"
       out = ""
-      #out = "<div class=\"social_icons\" style=\"overflow: hidden\">"
+      out << "<div class=\"social_icons_container\">"
       out << "<div class=\"facebook_like_button\">#{facebook_like_button(opts)}</div>"
       out << "<div class=\"social_icons\">"
       out << "<span class=\"social_icon_twitter\">#{social_icon_twitter(opts)}</span>"
@@ -26,8 +25,7 @@ module SocialIcons
       out << "<span class=\"social_icon_digg\">#{social_icon_digg(opts)}</span>"
       out << "<span class=\"social_icon_reddit\">#{social_icon_reddit(opts)}</span>"
       out << "</div>"
-      #out << image_tag("social_icons/#{opts[:size]}/Google.png")
-      #out << "</div>"
+      out << "</div>"
       out
     end
 
