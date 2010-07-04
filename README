@@ -1,0 +1,41 @@
+SocialIcons
+===========
+
+This is a simple plugin to help you display some social icons in your site.
+
+Icons supported so far:
+
+- Facebook like button
+- Facebook
+- Twitter
+- Delicious
+- Reddit
+- Digg
+
+
+Installation
+============
+
+Install plugin from github:
+
+$ .script/plugin install git://github.com/ozgun/social_icons.git
+
+Installation hooks will copy some files to application's "public" folder.
+
+images/social_icons/*
+stylesheets/social_icons.css
+
+Load social_icons.css file in your layout(i.e. application.html.erb)
+
+<%= stylesheet_link_tag 'social_icons' %>
+
+
+Usage
+============
+
+Call "print_social_icons" method in your partials or views.
+
+<%= print_social_icons %>
+
+
+Copyright (c) 2010 [Özgun Koyun (kozgun@gmail.com)], released under the MIT license

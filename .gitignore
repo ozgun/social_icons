@@ -1,0 +1,6 @@
+*.swp
+*~
+.loadpath
+.project
+.DS_Store
+.rvmrc
