@@ -1,5 +1,4 @@
-# SocialIcons
+require "social_icons/engine"
 
-module ModuleName
-  #
+module SocialIcons
 end

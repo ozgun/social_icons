@@ -1,0 +1,26 @@
+= SocialIcons
+
+== Installation
+
+Update Gemfile
+
+gem 'social_icons', :git => "https://github.com/ozgun/social_icons.git"
+
+In order to load javascript only once, add the following code to your layout(probably application layout):
+
+<pre>
+  <head>
+    ...
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <%= yield(:after_body) %>
+    ...
+  </body>
+</pre>
+
+== Usage
+
+<%= print_social_icons(link: post_url(@post), title: post.title) %>
+
+<%= facebook_comments(link: post_url(@post)) %>
