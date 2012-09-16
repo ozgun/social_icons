@@ -7,11 +7,11 @@ require "social_icons/version"
 Gem::Specification.new do |s|
   s.name        = "social_icons"
   s.version     = SocialIcons::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of SocialIcons."
-  s.description = "TODO: Description of SocialIcons."
+  s.authors     = ["Özgün Koyun"]
+  s.email       = ["kozgun@gmail.com"]
+  s.homepage    = "https://github.com/ozgun/social_icons"
+  s.summary     = "Add social buttons to your Rails app."
+  s.description = "Twitter, Facebook, Google+."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
